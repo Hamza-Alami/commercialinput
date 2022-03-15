@@ -24,7 +24,7 @@ df = pd.DataFrame(get_data())
 ix = int(st.text_input('Index de la visite que vous souhaitez supprimer:'))
 
 if st.button("Supprimer une visite"):
-    df = df.drop([ix])
-st.write(df)
+    udf = df.drop([ix])
+st.write(udf)
     
 
