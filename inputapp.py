@@ -27,5 +27,19 @@ if st.button("Supprimer une visite"):
     df = df.drop(index=int(ix))
     
 st.write(df)
+
+def convert_df(df):
+   return df.to_csv().encode('utf-8')
+
+
+excel = convert_df(df)
+
+st.download_button(
+   "Télécharger",
+   excel,
+   "visites.xlsx",
+   "text/xlsx",
+   key='download'
+)
     
 
