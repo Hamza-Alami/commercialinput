@@ -43,3 +43,5 @@ df['Agent'] = listagentfull
 df['agence de visite'] = listagence
 df['raison de visite'] = listraison
 df['date de visite'] = listdate
+
+st.dataframe(df)
