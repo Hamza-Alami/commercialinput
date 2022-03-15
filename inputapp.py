@@ -22,9 +22,9 @@ if st.button("Ajouter une visite"):
 df = pd.DataFrame(get_data())
 
 
-ix = int(st.text_input('Index de la visite que vous souhaitez supprimer:'))
+ix = st.text_input('Index de la visite que vous souhaitez supprimer:')
 if st.button("Supprimer une visite"):
-    df = df.drop([ix])
+    df = df.drop([int(ix)])
     
 st.write(df)
     
