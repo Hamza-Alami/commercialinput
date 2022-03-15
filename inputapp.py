@@ -7,7 +7,6 @@ import os
 st.set_page_config(layout='wide')
 st.title('Application input des Agents WIA')
 
-@st.cache(allow_output_mutation=True)
 def get_data():
     return []
 
