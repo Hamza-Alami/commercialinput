@@ -38,3 +38,8 @@ while len(listdate) < ndv:
     indate = st.date_input(
      "Date de la visite :")
     listdate.append(indate)
+    
+df['Agent'] = listagentfull
+df['agence de visite'] = listagence
+df['raison de visite'] = listraison
+df['date de visite'] = listdate
