@@ -27,21 +27,20 @@ listagent.append(inagent)
 listagentfull = listagent*ndv
 
 while len(listagence) < ndv:
-    inagence = st.text_input('Agence :')
+    inagence = st.text_input('Agence')
     listagence.append(inagence)
 
 while len(listraison) < ndv:
-    inraison = st.text_input('Raison de visite :')
+    inraison = st.text_input('Raison de visite')
     listraison.append(inraison)
 
 while len(listdate) < ndv:
-    indate = st.date_input(
-     "Date de la visite :")
+    indate = st.date_input("Date de la visite")
     listdate.append(indate)
     
 df['Agent'] = listagentfull
-df['agence de visite'] = listagence
-df['raison de visite'] = listraison
-df['date de visite'] = listdate
+df['aAgence'] = listagence
+df['Raison de visite'] = listraison
+df["Date de la visite"] = listdate
 
 st.dataframe(df)
