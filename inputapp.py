@@ -13,6 +13,5 @@ df = pd.DataFrame(columns=['Agent','Agence de visite','Raison de visite','Date d
 #INPUTS
 #N of visits
 
-nombredevisites = st.slider(('Nombres de visites: ', 0, 130, 25)
-st.write('Visites éfféctuées: ', nombredevisites)
-
+age = st.slider('How old are you?', 0, 130, 25)
+st.write("I'm ", age, 'years old')
