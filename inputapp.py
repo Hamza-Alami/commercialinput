@@ -13,5 +13,5 @@ df = pd.DataFrame(columns=['Agent','Agence de visite','Raison de visite','Date d
 #INPUTS
 #N of visits
 
-nombredevisites = st.number_input('Insert a number')
-st.write('The current number is ', nombredevisites)
+nombredevisites = st.number_input('Nombres de visites: ')
+st.write('Visites éfféctuées: ', nombredevisites)
