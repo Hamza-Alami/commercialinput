@@ -4,6 +4,7 @@ import numpy as np
 import datetime
 import os
 
+@st.cache(allow_output_mutation=True)
 st.set_page_config(layout='wide')
 st.title('Application input des Agents WIA')
 
