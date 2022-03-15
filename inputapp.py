@@ -14,4 +14,4 @@ df = pd.DataFrame(columns=['Agent','Agence de visite','Raison de visite','Date d
 #N of visits
 
 ndv = st.slider('Combien de visites avez vous effectuer?', 0, 100, 1)
-st.write("I'm ", age, 'years old')
+st.write("I'm ", ndv, 'years old')
