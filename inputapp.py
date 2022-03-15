@@ -8,7 +8,7 @@ st.set_page_config(layout='wide')
 st.title('Application input des Agents WIA')
 
 #DF creation
-df = pd.DataFrame(columns=['Agent','Agence de visite','Raison de visite','Date de visite'])
+df = pd.DataFrame()
 
 #INPUTS
 #N of visits
