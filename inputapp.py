@@ -19,7 +19,7 @@ RV = st.text_input('Raison de la visite:')
 if st.button("Ajouter une visite"):
     get_data().append({"Nom": Nom, "Agence": Agence, "Date": Date, "Raison": RV})
 
-df = pd.DataFrame(get_data()
+df = pd.DataFrame(get_data())
 
 #if st.button("Supprimer une visite"):
     #ix = text_input('Index de la visite que vous souhaitez supprimer:')
