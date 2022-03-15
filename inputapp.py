@@ -30,10 +30,11 @@ while len(listagence) < ndv:
     inagence = st.text_input('Agence :')
     listagence.append(inagence)
 
-#while len(listraison) < ndv:
-    #inraison = input('Raison de visite: ')
-    #listraison.append(inraison)
+while len(listraison) < ndv:
+    inraison = st.text_input('Raison de visite :')
+    listraison.append(inraison)
 
-#while len(listdate) < ndv:
-    #indate = input('Date de visite: ')
-    #listdate.append(indate)
+while len(listdate) < ndv:
+    indate = st.date_input(
+     "Date de la visite :")
+    listdate.append(indate)
