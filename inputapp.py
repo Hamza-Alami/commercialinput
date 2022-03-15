@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import datetime
 import os
+import xlsxwriter
+from io import BytesIO
 
 st.set_page_config(layout='wide')
 st.title('Application input des Agents WIA')
@@ -32,14 +34,16 @@ def convert_df(df):
    return df.to_csv().encode('utf-8')
 
 
-excel = convert_df(df)
+output = BytesIO()
+workbook = xlsxwriter.Workbook(output, {'in_memory': True})
+worksheet = workbook.add_worksheet()
+
+worksheet.write(df)
+workbook.close()
 
 st.download_button(
-   "Télécharger",
-   excel,
-   "visites.xlsx",
-   "text/xlsx",
-   key='download'
+    label="Télécharger le fichier en format Excel",
+    data=output.getvalue(),
+    file_name="visites.xlsx",
+    mime="application/vnd.ms-excel"
 )
-    
-
