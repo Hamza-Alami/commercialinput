@@ -26,9 +26,9 @@ inagent= st.text_input('Nom')
 listagent.append(inagent)
 listagentfull = listagent*ndv
 
-#while len(listagence) < ndv:
-    #inagence = input('Agence: ')
-    #listagence.append(inagence)
+while len(listagence) < ndv:
+    inagence = st.text_input('Agence :')
+    listagence.append(inagence)
 
 #while len(listraison) < ndv:
     #inraison = input('Raison de visite: ')
